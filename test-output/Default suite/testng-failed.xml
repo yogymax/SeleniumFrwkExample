@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.scp.testclasses.OrangeHRMLoginTest">
+        <methods>
+          <include name="check_user_login_with_valid_credetials_should_display_dashboard_v3" invocation-numbers="6"/>
+          <include name="check_user_login_with_valid_credetials_should_display_dashboard"/>
+        </methods>
+      </class> <!-- com.scp.testclasses.OrangeHRMLoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
