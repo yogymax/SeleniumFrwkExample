@@ -24,7 +24,7 @@ public class OrangeHRMLoginTest {
 	 * Method --- single test case
 	 */
 	
-	@Test
+	@Test(enabled=false)
 	public void check_user_login_with_valid_credetials_should_display_dashboard(){
 		/*
 		 * Steps
@@ -61,7 +61,7 @@ public class OrangeHRMLoginTest {
 	}
 	
 	
-	@Test
+	@Test(enabled=false)
 	public void check_user_login_with_valid_credetials_should_display_dashboard_v2(){
 		
 		System.out.println("Step1 : - Launch a browser and enter a url");
@@ -146,7 +146,7 @@ public class OrangeHRMLoginTest {
 	 * 
 	 * How to automate Dropdown -- Select class
 	 * Mousehover -- Actions
-	 * 
+	 * listout locators
 	 * 
 	 * http://toolsqa.com/automation-practice-form/ -- try this...
 	 * 
@@ -162,7 +162,7 @@ public class OrangeHRMLoginTest {
 	 * @param emsg
 	 */
 	
-	@Test(dataProvider="userData")
+	@Test(dataProvider="userData",enabled=false)
 	public void check_user_login_with_valid_credetials_should_display_dashboard_v3(String username,String password,String emsg){
 		
 		
