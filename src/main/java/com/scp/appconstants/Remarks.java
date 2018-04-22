@@ -52,6 +52,63 @@ public class Remarks {
 	 * 
 	 * 
 	 * 
+	 * Types of seleniumFramework
+	 * Module bases
+	 * Library Architecture
+	 * Data Driver
+	 * Keyword driver
+	 * Hybrid
+	 * BDD
+	 * 
+	 * MLDKHB -- Meaning fule name 
+	 * KLM BDH --- 
+	 * 
+	 * Module Based
+	 * 		-- modularity -- sepearate out business logic and test logic as per modules
+	 * 		e.g -- login invoice reporting xyz etc
+	 * AD
+	 * 		Module bases so easy to maintain and scalable
+	 * DS  -- While passing test data we need to pass across modules
+	 * 
+	 * Library Architecure
+	 * 		-- Seperate common functionlity acroos the modules 
+	 * Ad
+	 * 		-- Core reusability
+	 * 		-- Modularity
+	 * DS
+	 * 		-- If fails will affect entire entire applicaiton
+	 * 
+	 * DataDriven
+	 * 			-- your data lies inside either in files- excel csv and text or in dbs
+	 *  		-- you write a class  which will read data and pass it to test cases
+	 *AD -- if data changes no need to make changes in code
+	 *		easy to maintain test data as it seperate from the code
+	 *DS --
+	 *		We need to be dependent on third party to read the data
+	 *		MYSQL  -- MYSQL JAR
+	 *		Excel -- eXCLE JARS poi
+	 * 
+	 * keywordDriven
+	 * 		--Your data(keyword) lis in excelsheet
+	 * 			Test Description Keyword locator
+	 * AD
+	 * 		-- same keyword can be used in multiple test scenarios
+	 * 		-- 
+	 * DS
+	 * 	  -- We need to be dependent on third party to read the data
+	 *     -- If any of the keyword/locator gets changed will affect dependent test scenarios 
+ 	 * 
+	 * 
+	 * 
+	 * Hybrid
+	 * 	-- combination of any two or more frameworks is nothing but hybrid
+	 * 
+	 * 	AD -
+	 * DI
+	 * 
+	 * 
+	 * 
+	 * 
 	 * 
 	 * 
 	 * 

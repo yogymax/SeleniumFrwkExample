@@ -6,6 +6,9 @@ public interface ApplicationConstants {
 	String USERNAME="Admin";
 	String PASSWORD="admin";
 	
+	String TOOLS_QA_URL="http://toolsqa.com/automation-practice-form/";
+	
+	
 	
 	enum BrowserTypes{
 		FIREFOX,
@@ -13,4 +16,16 @@ public interface ApplicationConstants {
 		SAFARI,
 		IE
 	}
+	
+	enum GenderTypes{
+		Male,
+		Female
+	}
+	
+	enum ScrollType {
+		Up,
+		Down
+	}
+	
+	
 }

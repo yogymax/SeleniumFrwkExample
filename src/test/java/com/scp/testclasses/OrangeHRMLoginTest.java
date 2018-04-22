@@ -1,5 +1,7 @@
 package com.scp.testclasses;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.scp.appconstants.*;
 import com.scp.appconstants.WebDriverInitialization;
+import com.scp.util.excereadwrite.ExcelReadWriteUtil;
 import com.scp.web.pageobjects.DashboardPageObject;
 import com.scp.web.pageobjects.LoginPageObject;
 
@@ -96,8 +99,13 @@ public class OrangeHRMLoginTest {
 	
 	
 	@DataProvider
-	public Object [] [] userData(){
-		Object [] []  udata = new Object[8][3];
+	public Object [] [] userData() throws IOException{
+		return ExcelReadWriteUtil.readTestDataFromExcel();
+		
+		
+		//		Object [] []  udata = 
+				
+		/*new Object[8][3];
 		
 		
 		udata[1][0]="";
@@ -136,7 +144,7 @@ public class OrangeHRMLoginTest {
 		udata[7][2]="Success"; // Dashaboard should return true
 		
 		return udata;
-	}
+*/	}
 	
 	
 	/**
@@ -162,7 +170,7 @@ public class OrangeHRMLoginTest {
 	 * @param emsg
 	 */
 	
-	@Test(dataProvider="userData",enabled=false)
+	@Test(dataProvider="userData",enabled=true)
 	public void check_user_login_with_valid_credetials_should_display_dashboard_v3(String username,String password,String emsg){
 		
 		

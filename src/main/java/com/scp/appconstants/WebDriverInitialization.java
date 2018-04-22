@@ -55,6 +55,10 @@ public class WebDriverInitialization {
 	}
 
 	
+	public static void closeDriver(){
+		if(null!=driver)
+			driver.quit();
+	}
 	
 	public static void copyContentInSystemClipboard(String contents){
 		StringSelection stringSelection = new StringSelection(contents);
